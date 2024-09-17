@@ -7,14 +7,14 @@
 
 > "Can artificial intelligence beat the bookies?"
 
-Bookmakers worldwide, including state-owned entities, contribute to the thriving, billion-dollar betting industry. They offer services like lottery and sports betting, while promoting responsible gaming. To profit from this industry, bettors must outsmart bookmakers, using AI systems to find the most favorable deals and beat the odds.
+Bookmakers worldwide, including state-owned entities, contribute to the thriving, billion-dollar betting industry. They offer services like lottery and sports betting while promoting responsible gaming. To profit from this industry, bettors must outsmart bookmakers, using AI systems to find the most favourable deals and beat the odds.
 
 ```python
 expected value = (bookmaker odds / real odds) - 1
-if expecpected value > 0:
+if expected value > 0:
     place bet
 else:
-    do not place bet
+    do not place a bet
 ```
 
 Consistently betting on outcomes with a positive expected value will, over time, yield revenue. While the concept is simple, execution is more challenging. Revenue equals the bet amount squared, with the bet being the money placed on an outcome. The only variable Betting AI needs to determine is probability, which relies heavily on the most crucial element for accurate predictions: **Data**.
@@ -48,11 +48,11 @@ And the install the required packages:
 pip install -r requirements.txt
 ```
 
-This will install all the necesarry packages for all modules in BettingAI.
+This will install all the necessary packages for all modules in BettingAI.
 
 ## Modules ⚙️
 
-The project consists of **4** modules that each perform a specific tast in order to complete the BettingAI.
+The project consists of **4** modules that each perform a specific task to complete the BettingAI.
 
 ### Module 1 - Writer ✍🏽
 
@@ -71,9 +71,9 @@ The writer.py program is responsible for extracting and storing football data �
 
 > "Transforming raw data into processed input for model training."
 
-This program is designed to process raw match data from the database and prepare it for use in `model0`. It first initializes a connection to the database using `initSession()`, then fetches both raw and already processed match IDs. After calculating the difference between these two sets, the program identifies the matches that need to be processed.
+This program is designed to process raw match data from the database and prepare it for use in `model0`. It initializes a connection to the database using `initSession()`, then fetches raw and already processed match IDs. After calculating the difference between these two sets, the program identifies the matches that need to be processed.
 
-For each match, the program generates features and labels using the `features_for_model0()` and `labels()` functions, respectively. It then creates two instances of the Processed class, one for each team, and commits the processed data to the database. If an exception occurs during the commit process, the program rolls back the transaction and prints an error message.
+For each match, the program generates features and labels using the `features_for_model0()` and `labels()` functions, respectively. It then creates two instances of the Processed class, one for each team, and commits the processed data to the database. If an exception occurs during the commit process, the program returns the transaction and prints an error message.
 
 #### POTENTIAL IMPROVEMENTS 📈:
 
@@ -100,7 +100,7 @@ Leveraging TensorFlow and Keras, Module 3 creates a deep learning model that lea
 
 ### Module 4 - Prediction 🔮
 
-> Interface to get an overview over performance and bets
+> Interface to get an overview of performance and bets
 
 ⚽ Module 4 works tirelessly, updating the data every 24 hours. It fetches upcoming matches within the next 5 days 📆 and grabs live odds for all leagues 🌐.
 
@@ -118,13 +118,13 @@ With the help of **TensorFlow Keras**, our trusty model 🧙, and some handy hel
 
 > Module to connect frontend and backend
 
-This program serves as an API that connects the backend with the frontend, providing an overview of performance and bets in the betting system. It utilizes FastAPI to handle API requests and includes three endpoints: `/matches`, `/performance`, and `/stats`.
+This program serves as an API that connects the backend with the front-end, providing an overview of performance and bets in the betting system. It utilizes FastAPI to handle API requests and includes three endpoints: `/matches`, `/performance`, and `/stats`.
 
 - `/matches`: Returns a list of matches with their details, including date and time, team names, odds, and betting values.
 - `/performance`: Retrieves model performance data from the database and calculates the profit for each model, returning the formatted data as JSON.
-- `/stats`: Calculates various statistics, such as money won, bets won, winrate, and bets placed, and compares them to previous and goal values, returning the formatted data as JSON.
+- `/stats`: Calculates various statistics, such as money won, bets won, win rate, and bets placed, and compares them to previous and goal values, returning the formatted data as JSON.
 
-The API also handles CORS (Cross-Origin Resource Sharing) to ensure compatibility with frontend applications hosted on different domains.
+The API also handles CORS (Cross-Origin Resource Sharing) to ensure compatibility with front-end applications hosted on different domains.
 
 ## Contributing 🙋‍♂️
 
@@ -134,4 +134,4 @@ We appreciate your interest in contributing! Please follow best practices and re
 
 ## License 🪪 • ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-This project is licensed under the MIT License. This permissive license allows for reuse, modification, and distribution of the code, as long as the copyright notice and license text are included. The MIT License grants you the freedom to use the project in your own work, as well as contribute to its development and enhancement. Please review the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. This permissive license allows for the reuse, modification, and distribution of the code, as long as the copyright notice and license text are included. The MIT License grants you the freedom to use the project in your own work, as well as contribute to its development and enhancement. Please review the [LICENSE](LICENSE) file for more details.
