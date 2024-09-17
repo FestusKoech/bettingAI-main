@@ -1,7 +1,6 @@
 # BettingAI 🧠
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) ![](https://img.shields.io/github/languages/top/erikbohne/bettingAI?color=purple) ![](https://img.shields.io/github/repo-size/erikbohne/bettingAI?color=gre) ![](https://img.shields.io/github/commit-activity/m/erikbohne/bettingAI?color=ff69b4) `<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->`
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg)](#contributors-)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/main/LICENSE) ![img](https://img.shields.io/github/languages/top/erikbohne/bettingAI?color=purple) ![](https://img.shields.io/github/repo-size/erikbohne/bettingAI?color=gre) ![](https://img.shields.io/github/commit-activity/m/erikbohne/bettingAI?color=ff69b4)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -125,12 +124,6 @@ This program serves as an API that connects the backend with the frontend, provi
 - `/stats`: Calculates various statistics, such as money won, bets won, winrate, and bets placed, and compares them to previous and goal values, returning the formatted data as JSON.
 
 The API also handles CORS (Cross-Origin Resource Sharing) to ensure compatibility with frontend applications hosted on different domains.
-
-## Contributing 🙋‍♂️
-
-> Pull requests are welcome
-
-We appreciate your interest in contributing! Please follow best practices and refer to the contribution template when submitting a pull request. Focus on improving the model's efficiency and check the 'Issues' tab for potential improvements. For questions, comment on the issues, and we'll respond promptly.
 
 ## License 🪪 • ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
